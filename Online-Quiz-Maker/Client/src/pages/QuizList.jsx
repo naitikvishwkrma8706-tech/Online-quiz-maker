@@ -13,19 +13,19 @@ const QuizList = ({ setSelectedQuiz }) => {
   }, []);
 
   const fetchQuiz = async () => {
-    const res = await axios.get("https://online-quiz-maker-7b66.vercel.app");
+    const res = await axios.get("https://online-quiz-maker-ewm4.vercel.app");
 
     setQuizzes(res.data);
   };
 
   const deleteQuiz = async (id) => {
-    await axios.delete(`https://online-quiz-maker-phi.vercel.app/api/quiz/delete/${id}`);
+    await axios.delete((`https://online-quiz-maker-phi.vercel.app/api/quiz/delete/${id}`);
 
     fetchQuiz();
   };
 
   const updateQuiz = async () => {
-    await axios.put(`https://online-quiz-maker-phi.vercel.app/api/quiz/delete/${id}`, {
+    await axios.put((`https://online-quiz-maker-phi.vercel.app/api/quiz/delete/${id}`, {
       title: editTitle,
     });
 
