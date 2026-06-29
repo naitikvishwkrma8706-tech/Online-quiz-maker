@@ -36,7 +36,7 @@ const CreateQuiz = () => {
 
   const createQuiz = async () => {
     try {
-      await axios.post("https://online-quiz-maker-7b66.vercel.app", {
+      await axios.post("http://online-quiz-maker-ewm4.vercel.app", {
         title,
         questions,
       });
